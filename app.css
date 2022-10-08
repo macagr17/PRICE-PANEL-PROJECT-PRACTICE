@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #016ff9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width:100%;
+}
+.pricing-panel-project {
+    display:flex;
+    flex-direction: column;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+
+   
+}
+
+.pricing-image{
+    max-width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.pricing-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.pricing-panel{
+    border-bottom: 1px solid #e1f1ff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-panel:last-child{
+    border: none;
+}
+
+
+.features {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #016ff9;
+    font-size: 15px;
+}
+
+.features-items{
+    /* margin-top: 30px; */
+    color:blue;
+    border-top: 1px solid #e1f1ff;
+    padding: 30px 0;
+}
+
+.features-items:last-child{
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    margin: 20px 0;
+    color: #016ff9;
+}
+
+.pricing-button{
+    border: 1px solid #9dd1ff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color .25s ease-in-out;
+    
+  }
+
+
+  @media (min-width:900px){
+
+    .pricing-panel-project{
+        flex-direction: row;
+    
+    }
+
+    .pricing-panel{
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+    }
+    
+    .pricing-button.blue-button{
+        background-color: #016ff9;
+        color: white;
+  }
+    }
